@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  max-width: 100%;
+}
+
+body {
+  max-width: 100%;
+  min-height: 100%;
+
+  background-color: aqua;
+  background-image: url("../src/images/backgroudDogs.jpg");
+  background-size: cover;
+}
+
+.card-dog {
+  width: 600px;
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+img {
+  margin: 0;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.btn-vaccines {
+  background-color: #527beb;
+  width: 60px;
+  height: 25px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 5px 0;
+}
+.card-header {
+  display: flex;
+  justify-content: center;
+  background-color: #527beb;
+  height: 100px;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.data-dog {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+}
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
