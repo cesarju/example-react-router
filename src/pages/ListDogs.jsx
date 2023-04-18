@@ -7,8 +7,9 @@ function ListDogs(props) {
     <div className="lista-dogs">
       <Header title={"Pacientes"} />
       <div className="container-cards">
-        {dataList.map((dataItem) => (
+        {dataList.map((dataItem, index) => (
           <Card
+            key={index}
             name={dataItem.name}
             age={dataItem.age}
             owner={dataItem.owner}

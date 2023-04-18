@@ -2,23 +2,20 @@
   margin: 0;
   padding: 0;
 }
-.App {
-  max-width: 100%;
-}
 
 body {
   max-width: 100%;
   min-height: 100%;
+  background-color: #fef8f4;
+}
 
-  background-color: aqua;
-  background-image: url("../src/images/backgroudDogs.jpg");
-  background-size: cover;
+.App {
+  max-width: 100%;
 }
 
 .card-dog {
   width: 600px;
   display: flex;
-
   align-items: center;
   gap: 10px;
   background-color: white;
@@ -42,13 +39,11 @@ img {
   margin: 0 0 5px 0;
 }
 .card-header {
-  display: flex;
-  justify-content: center;
-  background-color: #527beb;
+  background-color: #8d6e63;
   height: 100px;
-  align-items: center;
   color: white;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .data-dog {
@@ -62,4 +57,12 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.container {
+  font-size: 1.1em;
+  width: 60%;
+  padding: 70px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
