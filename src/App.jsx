@@ -1,9 +1,11 @@
 import "./App.css";
+import ListDogs from "./pages/ListDogs";
 
 function App() {
   return (
     <div className="App">
-      {/* Realizar los rutasy navegacion con la libreria de react-router-dom */}
+      {/* Realizar los enrutamientos con la libreria de react-router-dom */}
+      <ListDogs />
     </div>
   );
 }
