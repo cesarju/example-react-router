@@ -8,15 +8,7 @@ function ListDogs(props) {
       <Header title={"Pacientes"} />
       <div className="container-cards">
         {dataList.map((dataItem, index) => (
-          <Card
-            key={index}
-            name={dataItem.name}
-            age={dataItem.age}
-            owner={dataItem.owner}
-            breed={dataItem.breed}
-            vaccines={dataItem.vaccines}
-            image={dataItem.image}
-          />
+          <Card key={index} item={dataItem} />
         ))}
       </div>
     </div>
