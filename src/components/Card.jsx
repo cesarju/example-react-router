@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 function Card(props) {
-  const { image, name, breed, age, owner, vaccines } = props;
+  const { image, name, breed, id } = props;
 
   return (
     <div className="card-dog">
@@ -7,11 +8,9 @@ function Card(props) {
       <div className="data-dog">
         <h3>Nombre: {name}</h3>
         <p>Raza: {breed}</p>
-        <p>Edad: {age}</p>
-        <p>Nombre del propietario: {owner}</p>
-        <p>Vacunas: {vaccines ? "✅" : "❌"}</p>
-        {!vaccines && <button className="btn-vaccines">Vacunar</button>}
-        <button className="details">Ver mas detalles</button>
+        <Link to={"/list-dogs/" + id}>
+          <button className="details">Ver mas detalles</button>
+        </Link>
       </div>
     </div>
   );

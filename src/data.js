@@ -1,5 +1,6 @@
-export const dogs = [
+const dogs = [
   {
+    id: "1",
     name: "Simba",
     breed: "Retriever",
     age: 3,
@@ -9,6 +10,7 @@ export const dogs = [
     vaccines: true,
   },
   {
+    id: "2",
     name: "Luna",
     breed: "Corgi",
     age: 2,
@@ -18,6 +20,7 @@ export const dogs = [
     vaccines: false,
   },
   {
+    id: "3",
     name: "Coco",
     breed: "Shar Pei",
     age: 1,
@@ -27,6 +30,7 @@ export const dogs = [
     vaccines: true,
   },
   {
+    id: "4",
     name: "Thor",
     breed: "Pug",
     age: 2,
@@ -36,6 +40,7 @@ export const dogs = [
     vaccines: true,
   },
   {
+    id: "5",
     name: "Bella",
     breed: "Pomerania",
     age: 2,
@@ -45,3 +50,11 @@ export const dogs = [
     vaccines: false,
   },
 ];
+
+export function getDogs() {
+  return Promise.resolve(dogs);
+}
+
+export function getDogById(dogId) {
+  return Promise.resolve(dogs.find((dog) => dog.id === dogId));
+}
